@@ -27,7 +27,7 @@ impl Parser {
      /// May throw std::io:Error if it fails reading from the file for any reason
      /// or panic if it fails to set an environment variable.
      /// 
-     /// It exposes a vector of names on the self object, representing the variables
+     /// It builds a vector of names on the self object, representing the variables
      /// that it managed to set.
      #[allow(dead_code)]
      pub fn parse(&mut self, path: &Path) -> Result<(), std::io::Error> {
